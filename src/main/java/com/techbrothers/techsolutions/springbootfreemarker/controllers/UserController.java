@@ -22,13 +22,5 @@ public class UserController {
     public String showUserInfo(Model model){
         model.addAttribute("user", new User());
         return "user";
-    }
-    
-    @PostMapping(value = "/user")
-    public String createUser(User user){
-        System.out.println("User inform" + user);
-        System.out.println("Create User method called");
-        return null;
-    }
-    
+    }    
 }
