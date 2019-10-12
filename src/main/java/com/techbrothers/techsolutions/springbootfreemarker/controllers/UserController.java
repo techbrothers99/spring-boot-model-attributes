@@ -5,8 +5,11 @@
  */
 package com.techbrothers.techsolutions.springbootfreemarker.controllers;
 
+import com.techbrothers.techsolutions.springbootfreemarker.domain.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 /**
  *
@@ -16,8 +19,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class UserController {
     
     @GetMapping("/user")
-    public String showUserInfo(){
+    public String showUserInfo(Model model){
+        model.addAttribute("user", new User());
         return "user";
     }
     
+    @PostMapping(value = "/user", params = {"create"})
+    public String createUser(User user){
+        System.out.println("User inform" + user);
+        System.out.println("Create User method called");
+        return null;
+    }
+    
+    @PostMapping(value = "/user", params = {"update"})
+    public String updateUser(User user){
+        System.out.println("User inform" + user);
+        System.out.println("Update User method called");
+        return null;
+    }
+     
 }

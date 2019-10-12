@@ -1,0 +1,13 @@
+h3, h1 {
+  text-align:center;
+}
+.user-form {
+    text-align:center;
+}
+.labels {
+   margin: 20px 20px;
+}
+input {
+    height: 30px;
+    width: 30%;
+}
