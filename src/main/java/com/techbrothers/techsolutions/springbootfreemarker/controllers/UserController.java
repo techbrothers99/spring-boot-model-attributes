@@ -24,18 +24,11 @@ public class UserController {
         return "user";
     }
     
-    @PostMapping(value = "/user", params = {"create"})
+    @PostMapping(value = "/user")
     public String createUser(User user){
         System.out.println("User inform" + user);
         System.out.println("Create User method called");
         return null;
     }
     
-    @PostMapping(value = "/user", params = {"update"})
-    public String updateUser(User user){
-        System.out.println("User inform" + user);
-        System.out.println("Update User method called");
-        return null;
-    }
-     
 }

@@ -21,7 +21,6 @@
                 </div>
                 <div>
                     <button type="submit" name="create">Create</button>
-                    <button type="submit" name="update">Update</button>
                 </div>
             </div>
         </form> 
