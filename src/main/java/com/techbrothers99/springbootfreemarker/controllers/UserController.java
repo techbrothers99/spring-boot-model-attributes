@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.techbrothers.techsolutions.springbootfreemarker.controllers;
+package com.techbrothers99.springbootfreemarker.controllers;
 
-import com.techbrothers.techsolutions.springbootfreemarker.domain.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import com.techbrothers99.springbootfreemarker.domain.User;
 
 /**
  *
@@ -24,10 +25,4 @@ public class UserController {
         return "user";
     } 
     
-    @PostMapping(value = "/user")
-    public String createUser(User user){
-        System.out.println("User inform" + user);
-        System.out.println("Create User method called");
-        return null;
-    }
 }

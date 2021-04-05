@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css"/>
     </head>
     <body>
-        <h1>Welcome to Tech Brothers - Tech Solutions</h1>
+        <h1>Welcome to Techbrothers99</h1>
         <h3>User Form </h3>     
         <form action="user" method="POST">
             <div class="user-form">

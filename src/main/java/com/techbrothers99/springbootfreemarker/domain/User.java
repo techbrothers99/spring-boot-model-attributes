@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.techbrothers.techsolutions.springbootfreemarker.domain;
+package com.techbrothers99.springbootfreemarker.domain;
 
 /**
  *
